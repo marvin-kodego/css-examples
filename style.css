@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px;
+}
+
+div {
+    padding: 20px;
+}
+
+p + p {
+    margin-top: 20px;
+}
+
+div.section {
+    border: 2px solid black;
+}
+
+div.section + div.section {
+    margin-top: 20px;
+}
+
+div.section > div {
+    background-color: grey;
+}
+
+div.section > div + div {
+    margin-top: 20px;
+}
+
+/* WIDTHS */
+
+.w-half {
+    width: 50%;
+}
+
+.w-max-720 {
+    max-width: 720px;
+}
+
+.w-min-720 {
+    min-width: 720px;
+}
+
+/* HEIGHTS */
+
+.h-half {
+    height: 50vh;
+}
+
+.h-max-240 {
+    max-height: 240px;
+}
+
+.h-min-240 {
+    min-height: 240px;
+}
+
+/* FONT STYLES */
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-large {
+    font-size: 24px;
+}
+
+.text-lighter {
+    font-weight: lighter;
+}
+
+.text-bolder {
+    font-weight: bolder;
+}
+
+.font-sans {
+    font-family: sans-serif;
+}
+
+.font-serif {
+    font-family: serif;
+}
+
+.font-mono {
+    font-family: monospace;
+}
+
+.font-ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text-red {
+    color: red;
+}
+
+/* BACKGROUND */
+
+div.section > .bg-red {
+    background-color: red;
+}
+
+.bg-image {
+    background: url("assets/background.jpg");
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-contain {
+    background-size: contain;
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.bg-center {
+    background-position: center;
+}
+
+/* BORDER */
+.border {
+    border: 5px solid black;
+}
+
+.border-dotted {
+    border-style: dotted;
+}
+
+.border-red {
+    border-color: red;
+}
+
+.border-widths {
+    border-width: 5px 10px 15px 20px;
+}
+
+.border-colors {
+    border-color: red blue green orange;
+}
+
+.border-rounded {
+    border-radius: 999px;
+}
+
+.arrow {
+    background-color: transparent !important;
+    height: 0;
+    padding: 0;
+    width: 0;
+}
+
+.arrow-right {
+    border-color: transparent transparent transparent black;
+    border-width: 20px 0 20px 50px;
+}
+
+.arrow-left {
+    border-color: transparent black transparent transparent;
+    border-width: 20px 50px 20px 0;
+}
+
+.arrow-down {
+    border-color: black transparent transparent transparent;
+    border-width: 50px 20px 0 20px;
+}
+
+.arrow-up {
+    border-color: transparent transparent black transparent;
+    border-width: 0 20px 50px 20px;
+}
+
+/* BUTTON */
+.button {
+    background-color: black;
+    border: 2px solid green;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 5px 10px;
+}
+
+.on-hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.on-hover:hover {
+    background-color: green;
+    border-color: black;
+    border-radius: 20px;
+    opacity: 100%;
+    transition: all 1s ease 1s;
+}
