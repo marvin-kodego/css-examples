@@ -4,7 +4,12 @@
     padding: 0;
 }
 
+html {
+    min-height: 200vh;
+}
+
 body {
+    height: 100%;
     padding: 20px;
 }
 
@@ -176,25 +181,109 @@ div.section > .bg-red {
     border-width: 0 20px 50px 20px;
 }
 
-/* BUTTON */
+/* LINE HEIGHT */
+
+.lh-10 {
+    line-height: 10px
+}
+
+.lh-20 {
+    line-height: 20px;
+}
+
+.lh-30 {
+    line-height: 30px;
+}
+
+.lh-2em {
+    line-height: 2em;
+}
+
+.lh-2rem {
+    line-height: 2rem;
+}
+
+/* FLOAT */
+
+div.section > div.container {
+    background-color: initial;
+    padding: 0;
+}
+
+div.container > div.square {
+    background-color: red;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* POSITION AND Z-INDEX */
+
+div.section > div.fixed {
+    background-color: red;
+    position: fixed;
+    right: 50px;
+    top: 50px;
+}
+
+.relative {
+    position: relative;
+}
+
+.always-on-top {
+    z-index: 1;
+}
+
+/* DISPLAY */
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+div.section .rectangle {
+    background-color: black;
+    color: white;
+    height: 50px;
+    padding: 10px;
+    width: 200px;
+}
+
+/* BUTTON AND HOVER */
 .button {
     background-color: black;
     border: 2px solid green;
     border-radius: 10px;
     color: white;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 5px 10px;
-}
-
-.on-hover {
     cursor: pointer;
-    opacity: 50%;
+    font-family: 'Ubuntu', sans-serif;
+    height: 50px;
+    padding: 5px 10px;
 }
 
 .on-hover:hover {
     background-color: green;
     border-color: black;
     border-radius: 20px;
-    opacity: 100%;
-    transition: all 1s ease 1s;
+    height: 250px;
+    transition: height 10s ease 1s;
 }
