@@ -1,0 +1,13 @@
+.news {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+.news h2 {
+    text-shadow: 2px 2px 8px black;
+}
+
+.news-type {
+    font-size: 0.75rem;
+}
