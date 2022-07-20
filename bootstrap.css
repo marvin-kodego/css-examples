@@ -1,3 +1,7 @@
+.first-col > .news {
+    height: 325px;
+}
+
 .news {
     background-size: cover;
     background-position: center;
@@ -8,6 +12,11 @@
     text-shadow: 2px 2px 8px black;
 }
 
-.news-type {
+.news-info {
     font-size: 0.75rem;
+}
+
+.news-entertainment {
+    background-color: #eb690b;
+    color: white;
 }
